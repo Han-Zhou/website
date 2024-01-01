@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+    /*background-color: ;
+    color:*/
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+/* Transition */
+a, .btn{
+    transition: all 300m s ease;
+}
+
+
+
+/* navigation links */
+
+#navigation-desktop, .nav-links{
+    display: flex;
+}
+
+
+#navigation-desktop{
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+
+.nav-links{
+    gap: 1em;
+    list-style: none;
+    font-size: 0.95em;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color:azure;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+#front-name{
+    font-size: 1.75em;
+}
+#front-name:hover{
+    cursor:default;
+}
+
+
+
+
+
+
+/* Hamburger Menu */
+
+#navigation-mobile{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    
+}
+
+.hamburger-menu{
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.25rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li{
+    list-style: none;
+}
+
+.menu-links.open{
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child{
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2){
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child{
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child{
+    transform: none;
+}
+.hamburger-icon span:nth-child(2){
+    transform: none;
+}
+.hamburger-icon span:last-child{
+    transform: none;
+}
+
+
+
+/* SECTIONS */
+
+
+
+
+
+
+
+

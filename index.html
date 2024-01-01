@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+  <title>Han | Portfolio</title>
+</head>
+
+
+
+<body>
+
+  <script src="script.js"></script>
+
+  <nav id="navigation-desktop">
+    <div id="front-name">Han Zhou</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#Journey">About</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#Random">Random</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav id="navigation-mobile">
+    <div id="front-name">Han Zhou</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#Journey" onclick="toggleMenu()">About</a></li>
+        <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+        <li><a href="#Random" onclick="toggleMenu()">Random</a></li>
+
+      </div>
+    </div>
+
+  </nav>
+
+</body>
+
+</html>
