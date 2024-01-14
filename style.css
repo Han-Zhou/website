@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');
 
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    background-color: #121212;
-    color: white;
+    background-color: #f4f4f4;
+    color: #121212;
+    width: 100%;
+    height: 100%;
 
     
 }
@@ -19,16 +22,46 @@ p{
 }
 
 
+a {
+    color: #121212;
+    text-decoration: none;
+}
+
+a:hover {
+    /* color: azure; */
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+section  {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 1rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+
+}
+
+
+
+/* DIFFERENT DIVS/CONTAINERS */
+
+.flex-container{
+    display: flex;
+}
 
 .sub-div{
-    margin: 20px 10%;
-    border: 1px white;
+    margin: 20px 5%;
+    border: 1px #121212;
     border-style: solid;
     border-radius: 1.6rem;
     padding: 1.4rem;
 }
 
-
+.sub-div-without-border{
+    margin: 20px 10%;
+    padding: 1.4rem;
+}
 
 /* TRANSITION */
 a,
@@ -58,16 +91,7 @@ nav {
     font-size: 0.95em;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-}
 
-a:hover {
-    color: azure;
-    text-decoration: underline;
-    text-underline-offset: 0.5rem;
-}
 
 #front-name {
     font-size: 1.75em;
@@ -77,7 +101,11 @@ a:hover {
     cursor: default;
 }
 
-
+.nav-links a:hover{
+    background: #12122e;
+    color: #f4f4f4;
+    cursor: pointer;
+}
 
 
 
@@ -106,7 +134,7 @@ a:hover {
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: white;
+    background-color: #121212;
     transition: all 0.3 ease-in-out;
 }
 
@@ -114,7 +142,7 @@ a:hover {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: #121212;
+    background-color: #f4f4f4;
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -126,7 +154,7 @@ a:hover {
     padding: 10px;
     text-align: center;
     font-size: 1.25rem;
-    color: white;
+    color: #121212;
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
@@ -137,6 +165,13 @@ a:hover {
 
 .menu-links.open {
     max-height: 300px;
+    
+}
+
+.menu-links a:hover{
+    background: #12122e;
+    color: #f4f4f4;
+    cursor: pointer;
 }
 
 .hamburger-icon.open span:first-child {
@@ -170,7 +205,7 @@ a:hover {
 
 /* SECTIONS */
 
-section {
+section #profile {
     padding-top: 4vh;
     height: 96vh;
     margin: 0 5rem;
@@ -293,6 +328,67 @@ section {
 
 
 /* JOURNEY */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PROJECTS */
+
+#project-pi-approx{
+    width: 70%;
+    margin: 2rem;
+}
+
+#project-pi-approx-img-container{
+    width: 30%;
+    height: 50%;
+    justify-content: center;
+    align-self: center;
+    margin: 10px;
+}
+
+
+#buffons-needle-img{
+    width: 100%;
+    height: auto
+}
+
+
+.categories > * {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.galleries > * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

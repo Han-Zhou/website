@@ -1,3 +1,11 @@
+@media screen and (max-width: 1400px){
+
+    #profile{
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+}
+
 @media screen and (max-width: 1200px){
 
     #navigation-desktop{
@@ -8,4 +16,53 @@
         display: flex;
     }
     
+    
+    
+
 }
+
+
+
+@media screen and (max-width: 600px) {
+
+    #journey, #projects, #contact{
+        margin-top: 2rem;
+    }
+
+    #profile{
+        display: block;
+    }
+
+    section{
+        height: fit-content;
+        margin: 0 5%;
+    }
+
+    .section_pic-container{
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+
+    
+    #projects{
+        width: 100%;
+        padding: 0;
+    }
+
+    .category{
+        display: inline-block;
+        padding: 0.7rem 1rem;
+    }
+    
+    .galleries{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+}
+
+
+
+
+

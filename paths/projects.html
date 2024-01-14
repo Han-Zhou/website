@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../projectstyle.css">
+    <link rel="stylesheet" href="../mediaqueries.css">
+    <title>Han | Projects</title>
+</head>
+
+
+
+<body>
+
+    <script src="../script.js"></script>
+
+    <nav id="navigation-desktop">
+        <div id="front-name">Han Zhou</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="../index.html">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="random.html">Random</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="navigation-mobile">
+        <div id="front-name">Han Zhou</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="../index.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="random.html" onclick="toggleMenu()">Random</a></li>
+
+            </div>
+        </div>
+
+    </nav>
+
+
+    <section id="projects">
+
+        <div class="flex-container" id="ex1">
+            <div class="sub-div" id="project-pi-approx">
+                <p><u>Approximation of Pi using probability</u></p>
+                <br>
+                <p>This is a project I have done for my IB Math AA HL Internal Assessment. The paper attemps to
+                    approximate Pi via
+                    Buffon's Needle Experiment and a (personal) modification/interpretation of Pólya's recurrence
+                    theorem.
+                </p>
+                <br>
+                <p>The project (along with the attached files) are uploaded to the link to the right.</p>
+
+            </div>
+            <div class="sub-div" id="project-pi-approx-img-container">
+                <img href="https://github.com/Han-Zhou/Investigation-of-Approximating-Using-Probability"
+                    src="../assets/Buffon's_needle.png" id="buffons-needle-img">
+
+            </div>
+        </div>
+
+
+        <div class="gallery-container">
+            <ul class="categories">
+                <!-- <li><a class="category">Frontend</a></li>
+            <li><a class="category">Backend</a></li>
+            <li><a class="category">Others</a></li> -->
+
+            </ul>
+            <section class="galleries">
+                <article class="gallery">
+                    <a href="https://github.com/Han-Zhou/Investigation-of-Approximating-Using-Probability">
+                        <div class="gallery__images">
+                            <img src="../assets/Buffon's_needle_project.png">
+                        </div>
+                        <div class="gallery__info">
+                            Approximation of Pi using probability
+                        </div>
+                    </a>
+                </article>
+
+                <article class="gallery">
+                    <a href="https://github.com/Han-Zhou/website">
+                        <div class="gallery__images">
+                            <img src="../assets/website_project.png">
+                        </div>
+                        <div class="gallery__info">
+                            This website
+                        </div>
+                    </a>
+                </article>
+            </section>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+</body>
+
+</html>
